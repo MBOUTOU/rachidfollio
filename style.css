@@ -5,6 +5,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none; 
+    color: white;
     font-family: "Poppins", sans-serif;
      /* font-family: "Bricolage Grotesque", sans-serif; */
 }
@@ -190,6 +191,17 @@
   z-index: 0;
 }
 
+.contener-element-texte-header::before{
+ content: "";
+ width: 100%;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+  background-color: rgb(245, 166, 35);
+ height: 2px;
+ background-size: cover;
+}
+
 .contener-element-texte-header h1{
  font-family: "Bricolage Grotesque", sans-serif;
   font-size: 95px;
@@ -256,6 +268,95 @@
     transform: translateY(20%);
   }
 }
+
+/* la partie du champs about  */
+
+.aboutme{
+  display: flex;
+  align-items: start;
+  gap: 40px;
+  padding: 80px 5% 0 5%;
+  justify-content: center;
+  background-color: black;
+}
+
+.box-text-about{
+max-width: 600px;
+}
+
+.aboutme .box-img img{
+ height: 500px;
+ object-fit: cover;
+ border-radius: 20px;
+ width: 400px;
+}
+
+.box-text-about h2{
+  font-family: "Bricolage Grotesque";
+   font-size: 40px;
+   color:  rgb(245, 166, 35);
+   margin-bottom: 30px;
+}
+
+.box-text-about p{
+   margin-bottom: 30px;
+}
+
+
+.about-btn{
+    display: flex; 
+    gap: 30px;
+}
+
+.about-btn .bouton-about{
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border: 1px solid  #333;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+
+.about-btn .bouton-about::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  width: 0%;
+ background-color: rgb(245, 166, 35);
+ transition: width 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -353,11 +454,53 @@
   right: 40px;
 }
 
+
+/* la partie du champs about  */
+
+.aboutme{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+  padding: 80px 2% 0 2%;
+  justify-content: center;
+  background-color: black;
 }
 
-/* media screm pour ecran 360px */
 
-/* la partie responsive de la page  */
+.aboutme .box-img img{
+ height: 400px;
+ object-fit: cover;
+ border-radius: 20px;
+ width: 100%;
+}
+
+.about-btn{
+    display: flex; 
+    gap: 10px;
+    flex-direction: column;
+}
+
+.about-btn .bouton-about{
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border: 1px solid  #333;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    width: 100%;
+}
+
+
+}
+
+
+
+/* media screm pour ecran 360px */
 
 @media (max-width : 400px) {
 
