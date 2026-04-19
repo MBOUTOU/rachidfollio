@@ -258,7 +258,7 @@
 /* la partie responsive de la page  */
 
 @media (max-width : 700px) {
- 
+
 .fond img{
         height: 800px;
         width: 100%;
@@ -296,6 +296,7 @@
   padding-top: 0;
   padding: 80px 0 0 0;
   height: 60vh;
+  overflow: hidden;
 }
 
 .contener-element-texte-header h1{
