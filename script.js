@@ -16,3 +16,13 @@ sr.reveal(".navbar", {
      origin : "bottom",
      duration: 600,
 });
+
+// declaration des variable js 
+
+const ButtonNavigation = document.querySelector(".navigationButton");
+const NavLinksblock = document.querySelector(".navlinks")
+
+ButtonNavigation.addEventListener("click", () =>{
+    ButtonNavigation.classList.toggle("active")
+    NavLinksblock.classList.toggle("active")
+})

@@ -15,7 +15,8 @@
 }
 
 .fond img{
-       position: absolute; top: -260px;
+       position: absolute; 
+       top: -260px;
         left: 50%;
         transform: translateX(-50%);
         height: 800px;
@@ -24,6 +25,7 @@
 
 .content-nav{
   padding: 20px 5% 0 5%;
+  position: relative;
 }
 
 .navbar{
@@ -54,6 +56,7 @@
 .navlinks{
     display: flex;
     align-items: center;
+    z-index: 500;
     gap: 50px;
 }
 
@@ -133,6 +136,7 @@
   width: 25px;
   position: relative;
   cursor: pointer;
+  z-index: 1000;
   border: none;
   background-color: transparent;
   display: none;
@@ -159,11 +163,13 @@
 
 
 .navigationButton.active .L1{
- transform: translateY(0px), rotate(-135deg);
+ transform: translateY(0px)  rotate(-135deg);
+ background-color: white;
 }
 
 .navigationButton.active .L3{
- transform: translateY(0px), rotate(135deg);
+ transform: translateY(0px) rotate(135deg);
+ background-color: white;
 }
 
 .navigationButton.active .L2{
@@ -181,6 +187,7 @@
   position: relative;
   padding: 40px 0 0 0;
   height: 80vh;
+  z-index: 0;
 }
 
 .contener-element-texte-header h1{
@@ -266,6 +273,7 @@
 
 .content-nav{
   padding: 40px 2% 0 2%;
+  z-index: 10;
 }
  
 .navbar{
@@ -279,10 +287,33 @@
 } 
 
 .navlinks{
-    display: none;
-    align-items: center;
-    gap: 50px;
+  position: fixed;
+  left: 0;
+  padding: 100px 0 0 0;
+  top: -50px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 100%;
+  transform: translateY(-500px);
+  pointer-events: auto;
+  background-color: black;
+  border-radius: 0 0 30px 30px;
+  border: 2px solid rgb(245, 166, 35);;
+  transition: transform 0.4s ease-in-out;
 }
+
+.navlinks.active{
+  transform: translateY(0);
+}
+
+
+.sous-navlink{
+   flex-direction: column;
+   gap: 20px;
+}
+
 
 .navigationButton{
   display: block;
@@ -307,7 +338,7 @@
 /* la partie des icones qui bougent */
 
 .icone-element .fa-solid{
-  font-size: 30px;
+  font-size: 45px;
   top: 60px;
 }
 
@@ -320,3 +351,65 @@
 }
 
 }
+
+/* media screm pour ecran 360px */
+
+/* la partie responsive de la page  */
+
+@media (max-width : 400px) {
+
+.contener-element-texte-header h1{
+  font-size: 45px;
+  line-height: 50px;
+}
+
+/* la partie des icones qui bougent */
+
+.icone-element .fa-solid{
+  font-size: 30px;
+  top: 20px;
+}
+
+.icone-element .fa-solid:nth-child(1){
+  left: 30px;
+}
+  
+.icone-element .fa-solid:nth-child(2){
+  right: 30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
