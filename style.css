@@ -133,7 +133,7 @@
 
 .navigationButton{
   height: 25px;
-  width: 25px;
+  width: 20px;
   position: relative;
   cursor: pointer;
   z-index: 1000;
@@ -298,10 +298,13 @@
   width: 100%;
   transform: translateY(-500px);
   pointer-events: auto;
-  background-color: black;
+  background-image: url(image/pintagram.jpg);
+  background-position: center;
+  background-size: cover;
   border-radius: 0 0 30px 30px;
-  border: 2px solid rgb(245, 166, 35);;
+  border: 2px solid rgb(245, 166, 35);
   transition: transform 0.4s ease-in-out;
+  gap: 30px;
 }
 
 .navlinks.active{
