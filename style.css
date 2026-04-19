@@ -99,7 +99,6 @@
    gap: 20px;
 }
 
-
 .sous-navlink .btn{
     background-color: transparent;
     padding: 10px 15px;
@@ -545,6 +544,32 @@ max-width: 600px;
    font-size: 14px
 }
 
+
+/* la partie des images et logiciels */
+.logiciel-skil{
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  flex-direction: column;
+}
+
+.logiciel-skil h3{
+   color:  rgb(245, 166, 35);
+}
+
+.lan-logiciel {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+}
+
+.lan-logiciel li img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
 
 .about-btn{
     display: flex; 
