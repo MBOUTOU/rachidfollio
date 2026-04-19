@@ -432,7 +432,7 @@ max-width: 600px;
 
 .navbar.active{
    position: fixed;
-   left: 10px;
+   left: 7px;
    top: 30px;
    width: 91%;
    z-index: 1000;
