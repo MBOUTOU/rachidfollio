@@ -275,7 +275,7 @@
   display: flex;
   align-items: start;
   gap: 40px;
-  padding: 80px 5% 0 5%;
+  padding: 80px 5% 20px 5%;
   justify-content: center;
   background-color: black;
 }
@@ -284,11 +284,24 @@
 max-width: 600px;
 }
 
-.aboutme .box-img img{
+.aboutme .box-img{
  height: 500px;
  object-fit: cover;
- border-radius: 20px;
- width: 400px;
+ border-radius: 30px;
+ width: 500px;
+ position: relative;
+  background: transparent;
+  border: 2px solid rgb(245, 166, 35);
+}
+
+.aboutme .box-img img{
+ height: 100%;
+ object-fit: cover;
+ border-radius: 30px;
+ width: 100%;
+ position: absolute;
+ top: -10px;
+ left:-10px;
 }
 
 .box-text-about h2{
@@ -297,6 +310,7 @@ max-width: 600px;
    color:  rgb(245, 166, 35);
    margin-bottom: 30px;
 }
+
 
 .box-text-about p{
    margin-bottom: 30px;
@@ -468,12 +482,27 @@ max-width: 600px;
 }
 
 
-.aboutme .box-img img{
- height: 400px;
+
+.aboutme .box-img{
+ height: 340px;
  object-fit: cover;
- border-radius: 20px;
- width: 100%;
+ border-radius: 30px;
+ width: 340px;
+ position: relative;
+  background: transparent;
+  border: 2px solid rgb(245, 166, 35);
 }
+
+
+.aboutme .box-img img{
+ left: -5px;
+ top: -10px;
+}
+
+.box-text-about p{
+   font-size: 14px
+}
+
 
 .about-btn{
     display: flex; 
