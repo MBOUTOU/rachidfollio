@@ -25,18 +25,28 @@
 }
 
 .content-nav{
-  padding: 20px 5% 0 5%;
+   height: 90px;
   position: relative;
+  padding: 10px 3%;
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 3%;
+    padding: 8px 30px;
     background-color: rgba(53, 52, 52, 0.329);
     backdrop-filter: blur(15px);
     border-radius: 30px;
+    transition: all 0.4 ease-in-out;
+} 
+
+.navbar.active{
+   position: fixed;
+   left: 20px;
+   top: 20px;
+   width: 91%;
+   z-index: 1000;
 } 
 
 .logo {
@@ -322,6 +332,32 @@ max-width: 600px;
     gap: 30px;
 }
 
+/* la partie des images et logiciels */
+.logiciel-skil{
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  flex-direction: column;
+}
+
+.logiciel-skil h3{
+   color:  rgb(245, 166, 35);
+}
+
+.lan-logiciel {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+}
+
+.lan-logiciel li img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
 .about-btn .bouton-about{
     background-color: transparent;
     padding: 10px 15px;
@@ -392,8 +428,15 @@ max-width: 600px;
 }
  
 .navbar{
-    padding: 8px 4% 8px 2%;
-    
+    padding: 8px 4% 8px 2%;  
+} 
+
+.navbar.active{
+   position: fixed;
+   left: 10px;
+   top: 30px;
+   width: 91%;
+   z-index: 1000;
 } 
 
 .logo a img{
@@ -474,20 +517,19 @@ max-width: 600px;
 .aboutme{
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 40px;
-  padding: 80px 2% 0 2%;
+  padding: 80px 2% 50px 2%;
   justify-content: center;
   background-color: black;
 }
-
 
 
 .aboutme .box-img{
  height: 340px;
  object-fit: cover;
  border-radius: 30px;
- width: 340px;
+ width: 98%;
  position: relative;
   background: transparent;
   border: 2px solid rgb(245, 166, 35);

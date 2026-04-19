@@ -21,8 +21,39 @@ sr.reveal(".navbar", {
 
 const ButtonNavigation = document.querySelector(".navigationButton");
 const NavLinksblock = document.querySelector(".navlinks")
+const Navbar = document.querySelector(".navbar");
 
 ButtonNavigation.addEventListener("click", () =>{
     ButtonNavigation.classList.toggle("active")
     NavLinksblock.classList.toggle("active")
 })
+
+document.addEventListener("scroll", () =>{
+     if( window.scrollY > 50){
+          Navbar.classList.add("active")
+     }else{
+          Navbar.classList.remove("active")
+     }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
