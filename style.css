@@ -744,10 +744,11 @@ max-width: 600px;
 
 
 .wb .gauche a{
-   width: 87%;
+   width: 78%;
    text-align: center;
    padding: 8px 15px;
    border-radius: 10px;
+   font-size: 13px;
     background-color: rgba(56, 56, 56, 0.171);
     backdrop-filter: blur(15px);
 }
