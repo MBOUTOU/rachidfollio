@@ -9,6 +9,9 @@
     font-family: "Poppins", sans-serif;
      /* font-family: "Bricolage Grotesque", sans-serif; */
 }
+html{
+ scroll-behavior: smooth;
+}
 
 .header{
     background-color: black;
@@ -27,7 +30,7 @@
 .content-nav{
    height: 90px;
   position: relative;
-  padding: 10px 3%;
+  padding: 20px 3% 0 3%;
 }
 
 .navbar{
@@ -464,6 +467,8 @@ max-width: 600px;
    padding: 8px 15px;
    border-radius: 10px;
    border: 1px solid white;
+    background-color: rgba(53, 52, 52, 0.021);
+    backdrop-filter: blur(20px);
 }
 
 .wb .droite img{
@@ -519,7 +524,7 @@ max-width: 600px;
 
 .navlinks{
   position: fixed;
-  left: 0;
+  left: -2px;
   padding: 100px 0 0 0;
   top: -50px;
   z-index: 1000;
@@ -704,7 +709,6 @@ max-width: 600px;
     width: 170px;
     background-color: rgba(53, 52, 52, 0.329);
     backdrop-filter: blur(15px);
-    border: 2px solid white;
 }
 
 .galery-web{
@@ -744,7 +748,8 @@ max-width: 600px;
    text-align: center;
    padding: 8px 15px;
    border-radius: 10px;
-   border: 1px solid white;
+    background-color: rgba(56, 56, 56, 0.171);
+    backdrop-filter: blur(15px);
 }
 
 .wb .droite img{
@@ -808,6 +813,52 @@ max-width: 600px;
   
 .icone-element .fa-solid:nth-child(2){
   right: 30px;
+}
+
+
+/* la partie des projet web et graphique */
+
+.my-conception{
+    padding: 50px 0;
+    text-align: center;
+    background-position: bottom;
+}
+
+.top-conception-texte h2{
+   margin-bottom: 30px;
+   font-size: 35px;
+}
+.button-galery {
+   display: flex;
+   align-items: center;
+   overflow-x: auto;
+   scroll-snap-type: x proximity;
+   gap: 10px;
+}
+
+.button-galery > * {
+   scroll-snap-align: start; 
+   flex: 0 0 auto; 
+}
+
+.button-galery .btn-navigation {
+   background-color: transparent;
+    padding: 10px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: white;
+    border: 1px solid  #333;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    width: 160px;
+    background-color: rgba(53, 52, 52, 0.329);
+    backdrop-filter: blur(15px);
+}
+
+.wb .gauche a{
+   
 }
 
 }

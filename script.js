@@ -2,7 +2,7 @@
 
 const sr = ScrollReveal();
 
-sr.reveal(".title-page, .contener-element-texte-header img", {
+sr.reveal(".title-page, .contener-element-texte-header img, .box-img img ,.wb .droite img", {
      distance : "40px",
      delay : 200,
      origin : "bottom",
@@ -16,6 +16,24 @@ sr.reveal(".navbar", {
      origin : "bottom",
      duration: 600,
 });
+
+
+sr.reveal(".lan-logiciel li img, .button-galery .btn-navigation", {
+     distance : "10px",
+     delay : 300,
+     origin : "bottom",
+     interval: 50,
+     duration: 600,
+});
+
+
+
+
+
+
+
+
+
 
 // declaration des variable js 
 
