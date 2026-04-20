@@ -326,14 +326,9 @@ max-width: 600px;
 }
 
 
-.about-btn{
-    display: flex; 
-    gap: 30px;
-}
-
 /* la partie des images et logiciels */
 .logiciel-skil{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   gap: 20px;
   align-items: start;
@@ -357,6 +352,12 @@ max-width: 600px;
   object-fit: cover;
 }
 
+
+.about-btn{
+    display: flex; 
+    gap: 30px;
+}
+
 .about-btn .bouton-about{
     background-color: transparent;
     padding: 10px 15px;
@@ -368,6 +369,7 @@ max-width: 600px;
     position: relative;
     overflow: hidden;
     transition: 0.4s ease-in-out;
+    width: 100%;
 }
 
 
@@ -379,24 +381,96 @@ max-width: 600px;
   z-index: -1;
   top: 0;
   width: 0%;
- background-color: rgb(245, 166, 35);
  transition: width 0.4s ease-in-out;
 }
 
+/* la partie des projet web et graphique */
 
+.my-conception{
+    background: url(image/violet.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 5%;
+}
 
+.top-conception-texte{
+  text-align: center;
+  margin-bottom: 50px;
+}
 
+.top-conception-texte h2{
+   font-family: "Bricolage Grotesque", sans-serif;
+   color:rgb(245, 166, 35);
+   margin-bottom: 35px;
+   font-size: 40px;
+}
 
+.button-galery {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+}
 
+.button-galery .btn-navigation {
+   background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border: 1px solid  #333;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    width: 250px;
+    background-color: rgba(53, 52, 52, 0.329);
+    backdrop-filter: blur(15px);
+    border: 2px solid white;
+}
 
+.galery-web{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
 
+.wb{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+  width: 600px;
+  padding: 20px 0 0 20px;
+  border-radius: 30px;
+  background-color: rgba(53, 52, 52, 0.329);
+  backdrop-filter: blur(15px);
+}
 
+.wb p{
+ font-size: 14px;
+ margin: 30px 0;
+}
 
+.wb .gauche{
+   width: 450px;
+}
 
+.wb .gauche a{
+   width: 100%;
+   display: block;
+   text-align: center;
+   padding: 8px 15px;
+   border-radius: 10px;
+   border: 1px solid white;
+}
 
-
-
-
+.wb .droite img{
+   width: 300px;
+   height: auto;
+   object-fit: cover;
+}
 
 
 
@@ -591,6 +665,114 @@ max-width: 600px;
     width: 100%;
 }
 
+/* la partie des projet web et graphique */
+
+.my-conception{
+    padding: 50px 0;
+    text-align: center;
+    background-position: bottom;
+}
+
+.top-conception-texte h2{
+   margin-bottom: 30px;
+   font-size: 35px;
+}
+.button-galery {
+   display: flex;
+   align-items: center;
+   overflow-x: auto;
+   scroll-snap-type: x proximity;
+   gap: 15px;
+}
+
+.button-galery > * {
+   scroll-snap-align: start; 
+   flex: 0 0 auto; 
+}
+
+.button-galery .btn-navigation {
+   background-color: transparent;
+    padding: 10px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: white;
+    border: 1px solid  #333;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    width: 170px;
+    background-color: rgba(53, 52, 52, 0.329);
+    backdrop-filter: blur(15px);
+    border: 2px solid white;
+}
+
+.galery-web{
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 2%;
+}
+
+.wb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding: 20px 0 0 0;
+}
+
+.wb p{
+ font-size: 14px;
+ margin: 30px 30px;
+ text-align: justify;
+}
+
+.wb .gauche{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 0 10px;
+}
+
+
+.wb .gauche a{
+   width: 87%;
+   text-align: center;
+   padding: 8px 15px;
+   border-radius: 10px;
+   border: 1px solid white;
+}
+
+.wb .droite img{
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -599,6 +781,14 @@ max-width: 600px;
 /* media screm pour ecran 360px */
 
 @media (max-width : 400px) {
+
+.navbar.active{
+   position: fixed;
+   left: 6px;
+   top: 30px;
+   width: 91%;
+   z-index: 1000;
+} 
 
 .contener-element-texte-header h1{
   font-size: 45px;
