@@ -441,7 +441,7 @@ max-width: 600px;
 
 .galery-web{
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 30px;
 }
