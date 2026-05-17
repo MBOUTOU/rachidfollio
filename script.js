@@ -18,53 +18,13 @@ sr.reveal(".navbar", {
 });
 
 
-sr.reveal(".lan-logiciel li img, .button-galery .btn-navigation", {
+sr.reveal(".lan-logiciel li img, .button-galery .btn-navigation",{
      distance : "10px",
      delay : 300,
      origin : "bottom",
      interval: 50,
      duration: 600,
 });
-
-
-
-
-
-
-
-
-
-
-// declaration des variable js 
-
-const ButtonNavigation = document.querySelector(".navigationButton");
-const NavLinksblock = document.querySelector(".navlinks")
-const Navbar = document.querySelector(".navbar");
-
-ButtonNavigation.addEventListener("click", () =>{
-    ButtonNavigation.classList.toggle("active")
-    NavLinksblock.classList.toggle("active")
-})
-
-document.addEventListener("scroll", () =>{
-     if( window.scrollY > 50){
-          Navbar.classList.add("active")
-     }else{
-          Navbar.classList.remove("active")
-     }
-})
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

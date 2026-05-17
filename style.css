@@ -390,10 +390,12 @@ max-width: 600px;
 /* la partie des projet web et graphique */
 
 .my-conception{
-    background: url(image/violet.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.384)), url(image/violet.jpg);
     background-size: cover;
     background-position: center;
-    padding: 50px 5%;
+    background-position: center;
+    padding: 50px 5% 30px 5%;
+    overflow: hidden;
 }
 
 .top-conception-texte{
@@ -415,7 +417,7 @@ max-width: 600px;
    gap: 30px;
 }
 
-.button-galery .btn-navigation {
+.btn-navigation {
    background-color: transparent;
     padding: 10px 15px;
     border-radius: 10px;
@@ -423,20 +425,39 @@ max-width: 600px;
     font-size: 16px;
     color: white;
     border: 1px solid  #333;
-    position: relative;
-    overflow: hidden;
     transition: 0.4s ease-in-out;
     width: 250px;
     background-color: rgba(53, 52, 52, 0.329);
     backdrop-filter: blur(15px);
     border: 2px solid white;
+    font-weight: 600;
 }
+
+.btn-navigation.active{
+  border-color:rgb(245, 166, 35);
+  color:rgb(245, 166, 35);
+}
+
 
 .galery-web{
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+
+.gal{
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+} 
+
+.gal.active{
+  visibility: visible;
+    opacity: 1;
+    height: auto;
 }
 
 .wb{
@@ -467,8 +488,7 @@ max-width: 600px;
    padding: 8px 15px;
    border-radius: 10px;
    border: 1px solid white;
-    background-color: rgba(53, 52, 52, 0.021);
-    backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .wb .droite img{
@@ -484,6 +504,7 @@ max-width: 600px;
     background-color: rgba(53, 52, 52, 0.329);
     backdrop-filter: blur(15px);
 }
+
 .grap-content {
     display: grid;
     grid-template-areas: 
@@ -510,6 +531,28 @@ max-width: 600px;
 .dg7 { grid-area: dg7; }
 .dg8 { grid-area: dg8; }
 .dg9 { grid-area: dg9; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -618,7 +661,6 @@ max-width: 600px;
 /* la partie du champs about  */
 
 .aboutme{
-  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
@@ -698,8 +740,8 @@ max-width: 600px;
 /* la partie des projet web et graphique */
 
 .my-conception{
-    padding: 50px 0;
     text-align: center;
+    padding: 50px 2% 30px 2%;
     background-position: bottom;
 }
 
@@ -707,39 +749,19 @@ max-width: 600px;
    margin-bottom: 30px;
    font-size: 35px;
 }
+
 .button-galery {
-   display: flex;
-   align-items: center;
-   overflow-x: auto;
-   scroll-snap-type: x proximity;
    gap: 15px;
 }
 
-.button-galery > * {
-   scroll-snap-align: start; 
-   flex: 0 0 auto; 
-}
-
-.button-galery .btn-navigation {
-   background-color: transparent;
+.btn-navigation {
     padding: 10px 0px;
-    border-radius: 10px;
-    cursor: pointer;
     font-size: 12px;
-    color: white;
-    border: 1px solid  #333;
-    position: relative;
-    overflow: hidden;
-    transition: 0.4s ease-in-out;
     width: 170px;
-    background-color: rgba(53, 52, 52, 0.329);
-    backdrop-filter: blur(15px);
 }
 
 .galery-web{
-  flex-direction: column;
-  gap: 30px;
-  padding: 0 2%;
+  flex-wrap: wrap;
 }
 
 .wb{
@@ -753,7 +775,7 @@ max-width: 600px;
 }
 
 .wb p{
- font-size: 14px;
+ font-size: 12px;
  margin: 30px 30px;
  text-align: justify;
 }
@@ -765,7 +787,7 @@ max-width: 600px;
    justify-content: center;
    flex-direction: column;
    padding: 0 10px;
-}
+} 
 
 
 .wb .gauche a{
@@ -786,7 +808,7 @@ max-width: 600px;
 
 
 .galery-design-graphique{
-    padding: 0px 2%;
+    padding: 10px 2%;
 }
 .grap-content {
     display: grid;
@@ -862,79 +884,23 @@ max-width: 600px;
 
 .my-conception{
     padding: 50px 0;
-    text-align: center;
-    background-position: bottom;
 }
 
 .top-conception-texte h2{
    margin-bottom: 30px;
    font-size: 35px;
 }
+
 .button-galery {
    display: flex;
    align-items: center;
-   overflow-x: auto;
-   scroll-snap-type: x proximity;
    gap: 10px;
 }
 
-.button-galery > * {
-   scroll-snap-align: start; 
-   flex: 0 0 auto; 
-}
-
-.button-galery .btn-navigation {
-   background-color: transparent;
-    padding: 10px 0px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 12px;
-    color: white;
-    border: 1px solid  #333;
-    position: relative;
-    overflow: hidden;
-    transition: 0.4s ease-in-out;
+.btn-navigation {
     width: 160px;
-    background-color: rgba(53, 52, 52, 0.329);
-    backdrop-filter: blur(15px);
-}
-
-.wb .gauche a{
-   
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
