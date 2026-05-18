@@ -26,6 +26,14 @@ sr.reveal(".lan-logiciel li img, .button-galery .btn-navigation, .contenaire-box
      duration: 600,
 });
 
+sr.reveal(".contenaire-box-com",{
+     distance : "100px",
+     delay : 300,
+     origin : "bottom",
+     interval: 50,
+     duration: 600,
+});
+
 
 
 
