@@ -18,7 +18,7 @@ sr.reveal(".navbar", {
 });
 
 
-sr.reveal(".lan-logiciel li img, .button-galery .btn-navigation",{
+sr.reveal(".lan-logiciel li img, .button-galery .btn-navigation, .contenaire-box-com",{
      distance : "10px",
      delay : 300,
      origin : "bottom",
