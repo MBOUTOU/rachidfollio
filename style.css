@@ -632,6 +632,15 @@ max-width: 600px;
 
 @media (max-width : 700px) {
 
+html,body{
+   background: linear-gradient(rgba(0, 0, 0, 0.384)), url(image/violet.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    scroll-behavior: smooth;
+}
+
 .fond img{
         height: 800px;
         width: 100%;
