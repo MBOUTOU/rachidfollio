@@ -9,8 +9,13 @@
     font-family: "Poppins", sans-serif;
      /* font-family: "Bricolage Grotesque", sans-serif; */
 }
-html{
- scroll-behavior: smooth;
+html,body{
+   background: linear-gradient(rgba(0, 0, 0, 0.384)), url(image/violet.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    scroll-behavior: smooth;
 }
 
 .header{
@@ -390,13 +395,8 @@ max-width: 600px;
 /* la partie des projet web et graphique */
 
 .my-conception{
-    background: linear-gradient(rgba(0, 0, 0, 0.384)), url(image/violet.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: -1;
     padding: 50px 5% 30px 5%;
-    overflow: hidden;
+  
 }
 
 .top-conception-texte{

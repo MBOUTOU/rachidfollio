@@ -31,7 +31,7 @@ sr.reveal(".contenaire-box-com",{
      delay : 300,
      origin : "bottom",
      interval: 50,
-     duration: 600,
+     duration: 800,
 });
 
 
